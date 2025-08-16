@@ -17,5 +17,5 @@ chmod +x system_info.sh
 ./system_info.sh
 
 
-##Screenshots
-![script output](screenshots/System info on lxx.png)
+## Screenshots
+![script output](screenshots/System_info.png)
