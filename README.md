@@ -53,3 +53,9 @@ Github: [535amar](https://github.com/535amar)
 - It shows **your own system’s information** when run.  
 - Contributions and suggestions are welcome 
 - Feel free to fork and improve this script
+
+## Versioning 
+This project uses [Semantic Versioning](https://semver.org)
+Release will tagged as 'vMAJOR.MINOR.PATCH(e.g., V1.0.0)
+
+- **V1.0.0** 
