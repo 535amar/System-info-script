@@ -12,7 +12,7 @@ This project includes:
 2. **run_neofetch.sh** → A wrapper script to install and run [Neofetch](https://github.com/dylanaraps/neofetch).
 
 ## Usage
-```bash
+```bash```
 chmod +x system_info.sh
 ./system_info.sh
 
