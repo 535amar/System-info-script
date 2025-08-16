@@ -15,3 +15,7 @@ This project includes:
 ```bash
 chmod +x system_info.sh
 ./system_info.sh
+
+
+##Screenshots
+![script output](screenshots/System info on lxx.png)
