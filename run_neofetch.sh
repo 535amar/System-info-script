@@ -1,14 +1,10 @@
 #!/bin/bash
-# run_neofetch.sh
+# run_neofetch.sh (portable version)
 
-# Checking if neofetch is installed
-if ! command -v neofetch &> /dev/null
-then
-   echo "Neofetch is not installed. Installing......"
-   sudo apt update && sudo apt install neofetch -y
-
-   echo "If the installation faild, directly clone from github= https://github.com/dylanaraps/neofetch.git "
+if [ -f "./neofetch/neofetch" ]; then
+    ./neofetch/neofetch
+else
+   echo "Cloning Neofetch...."
+   git clone https://github.com/dylanaraps/neofetch.git
+   ./neofetch/neofetch
 fi
-
-# Run neofetch
-neofetch
