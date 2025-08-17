@@ -44,7 +44,8 @@ You **don’t need to install Neofetch** system-wide — a portable version is i
 
 ## Screenshots
 ![System info](screenshots/system_info.png)
-
+- Upgraded v1.1.0
+![system info](screenshots/fetchiirun.png)
 
 ## :pushpin: Author
 Created by **Amar**
