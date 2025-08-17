@@ -3,7 +3,7 @@
 This repository provides two simple and portable tools for displaying system information on Linux systems:
 
 1. ***run_fetchii.sh**-Runs[Neofetch](auto install it if missing)
-2. **system_info.sh**-Lightweight Bassh script that prints system details without needing Neofetch
+2. **system_info.sh**-Lightweight Bash script that prints system details without needing Neofetch
 
 Both are designed to be portable and easy to use.
 
@@ -14,6 +14,7 @@ Both are designed to be portable and easy to use.
 - Automatically clone Neofetch if it's not available.
 - Displays system information in a clean, aesthetic format.
 - Saves output into 'run_neofetch.log'.
+- Shows *system_info.sh* output without running system_info.sh.
 **system_info.sh**
 - Shows basic system information(OS, Kernal, CPU, RAM, Disk usage, etc...)
 - No external dependencies (pure Bash).
@@ -35,11 +36,10 @@ You **don’t need to install Neofetch** system-wide — a portable version is i
    cd System-info-script
 
 2. **Make this script executable**
-   chmod +x system_info.sh
+   chmod +x run_fetchii.sh
 
 3. **Run it**
-  ./system_info.sh
-  ./run_neofetch.sh
+  ./run_fetchii.sh
 
 
 ## Screenshots
