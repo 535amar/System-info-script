@@ -40,7 +40,7 @@ echo -e "\n==== $(whoami)'s System Info ===="
 # Disk usage
 echo -e "\n=====Disk Usage====" 
 if command -v df -f >/dev/null 2>&1; then
-       df -h | grep '^dev' || echo "No /dev partitions found" | tee -a "$LOGFILE"
+       df -h | grep "/dev/" || echo "No /dev partitions found" | tee -a "$LOGFILE"
 else
    echo "Error: Could not retrive disk usage." | tee -a "$LOGFILE"
 fi
