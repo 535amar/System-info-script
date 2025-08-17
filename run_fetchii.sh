@@ -35,19 +35,20 @@ fi
 
 # Custom System Info
 echo " " | tee -a "$LOGFILE"
-echo "==== $(whoami)'s System Info ===="
+echo -e "\n==== $(whoami)'s System Info ===="
 
 # Disk usage
-echo -e "\n=====Disk Usage===="
-if df -f >/dev/null 2>&1; then
+echo -e "\n=====Disk Usage====" 
+if command -v df -f >/dev/null 2>&1; then
        df -h | grep '^dev' || echo "No /dev partitions found" | tee -a "$LOGFILE"
 else
-   echo "Error: Could not retrive disk usage."
+   echo "Error: Could not retrive disk usage." | tee -a "$LOGFILE"
 fi
+
 echo
-echo -e "\n====Memory Usage===="
-if free -h >/dev/null 2>&1; then | tee -a "$LOGFILE"
-       free -h 
+echo -e "\n====Memory Usage====" | tee -a "$LOGFILE"
+if command -v free -h >/dev/null 2>&1; then 
+       free -h  | tee -a "$LOGFILE"
 else
-   echo "Error: Could not retrive memory usage"
+   echo "Error: Could not retrive memory usage" | tee -a "$LOGFILE"
 fi
