@@ -15,7 +15,6 @@ Both are designed to be portable and easy to use.
 - Displays system information in a clean, aesthetic format.
 - Saves output into 'run_neofetch.log'.
 - Shows *system_info.sh* output without running system_info.sh.
-**system_info.sh**
 - Shows basic system information(OS, Kernal, CPU, RAM, Disk usage, etc...)
 - No external dependencies (pure Bash).
 - Ideal for minimal environments without Neofetch.
