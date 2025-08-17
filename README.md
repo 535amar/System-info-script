@@ -2,15 +2,15 @@
 
 This repository provides two simple and portable tools for displaying system information on Linux systems:
 
-1. ***run_neofetch.sh**-Runs[Neofetch](auto install it if missing)
+1. ***run_fetchii.sh**-Runs[Neofetch](auto install it if missing)
 2. **system_info.sh**-Lightweight Bassh script that prints system details without needing Neofetch
 
 Both are designed to be portable and easy to use.
 
------
+-------
 
 ##  Features
-**run_neofetch.sh**
+**run_fetchii.sh**
 - Automatically clone Neofetch if it's not available.
 - Displays system information in a clean, aesthetic format.
 - Saves output into 'run_neofetch.log'.
