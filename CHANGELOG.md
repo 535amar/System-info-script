@@ -20,7 +20,6 @@
 - Improved error handling with 'set -euo pipefail'.
 - FIt dependency check 
 - Validates Neofetch executable before running
-**system_info.sh*
 - Enhanced information of CPU,RAM,and disk usage output.
 - Added check for '/proc' availability for safer execution.
 - Improved readability for minimal environments.
@@ -28,3 +27,4 @@
 ##Changed
 - Changed the name of the scrpt from **run_neofetch.sh to run_fetchii.sh**
 - Code cleanup across both scripts.
+- Merged to one file doer so you only need to run run_fetchii.sh to get the full info.
