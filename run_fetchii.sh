@@ -4,6 +4,10 @@
 set -euo pipefail
 LOGFILE="./run_fetchii.log"
 
+echo  -e "\n==== $(whoami)'s System Info ===="
+
+echo -e "\n*********************************"
+
 echo "==== Running Neofetch ===" | tee -a "$LOGFILE"
 
 # Check git
@@ -35,7 +39,7 @@ fi
 
 # Custom System Info
 echo " " | tee -a "$LOGFILE"
-echo -e "\n==== $(whoami)'s System Info ===="
+echo -e "\n==== $(time && uptime ===="
 
 # Disk usage
 echo -e "\n=====Disk Usage====" 
