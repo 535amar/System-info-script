@@ -32,3 +32,22 @@ else
    echo "Error: neofetch script not found or not ececutable." | tee -a "$LOGFILE"
    exit 1
 fi
+
+# Custom System Info
+echo " " | tee -a "$LOGFILE"
+echo "==== $(whoami)'s System Info ===="
+
+# Disk usage
+echo -e "\n=====Disk Usage===="
+if df -f >/dev/null 2>&1; then
+       df -h | grep '^dev' || echo "No /dev partitions found" | tee -a "$LOGFILE"
+else
+   echo "Error: Could not retrive disk usage."
+fi
+echo
+echo -e "\n====Memory Usage===="
+if free -h >/dev/null 2>&1; then | tee -a "$LOGFILE"
+       free -h 
+else
+   echo "Error: Could not retrive memory usage"
+fi
