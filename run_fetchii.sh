@@ -13,17 +13,17 @@ fi
 
 if [ -f "./neofetch/neofetch" ]; then
    echo "Cloning Neofetch repository..." tee -a "$LOGFILE"
-   if git clone --depth=1 https://github.com/535amar/System-info-script.git >>"$LOGFILE" 2>&1; then
+   if git clone --depth=1 https://github.com/dylanaraps/neofetch.git >>"$LOGFILE" 2>&1; then
        echo "Clone successful." | tee -a "$LOGFILE"
    else
        echo "Error:Failed to clone Neofetch repo." | tee -a "$LOGFILE"
-       exit
+       exit 1
     fi
 fi
 
 if [ -x "./neofetch/neofetch" ]; then
       ./neofetch/neofetch | tee -a "$LOGFILE"
 else
-   echo "Error: neofetch script npt found or not ececutable." | tee -a "$LOGFILE"
-   exit
+   echo "Error: neofetch script not found or not ececutable." | tee -a "$LOGFILE"
+   exit 1
 fi
