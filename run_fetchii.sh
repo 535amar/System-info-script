@@ -6,9 +6,9 @@ LOGFILE="./run_fetchii.log"
 
 echo  -e "\n==== $(whoami)'s System Info ===="
 
-echo -e "\n*********************************"
+echo -e "\n********************************"
 
-echo "==== Running Neofetch ===" | tee -a "$LOGFILE"
+echo "==== Running Neofetch ====" | tee -a "$LOGFILE"
 
 # Check git
 if ! command -v git >/dev/null 2>&1; then
@@ -39,7 +39,9 @@ fi
 
 # Custom System Info
 echo " " | tee -a "$LOGFILE"
-echo -e "\n==== $(time && uptime ===="
+echo -e "\n==== Date & Uptime ====" 
+echo "Date: $(date)"
+echo "Uptime: $(uptime -p)"
 
 # Disk usage
 echo -e "\n=====Disk Usage====" 
